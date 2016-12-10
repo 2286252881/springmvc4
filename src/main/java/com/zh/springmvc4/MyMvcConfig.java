@@ -64,13 +64,17 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {// 2
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/abc").setViewName("/index");
 		/**
-		 * 文件上环
+		 * 文件上传
 		 */
 		registry.addViewController("/toUpload").setViewName("/upload");
 		/**
 		 * messageconverter
 		 */
 		registry.addViewController("/converter").setViewName("/converter");
+		/**
+		 * sse
+		 */
+		registry.addViewController("/sse").setViewName("/sse");
 	}
 	
 	/**
